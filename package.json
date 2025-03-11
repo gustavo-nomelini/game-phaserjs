@@ -1,7 +1,7 @@
 {
   "name": "game-phaserjs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/gustavo-nomelini/game-phaserjs.git",
   "author": "gustavo-nomelini <gustavolnomelini@gmail.com>",
   "license": "MIT",
