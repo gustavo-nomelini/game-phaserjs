@@ -42,6 +42,21 @@ class PreloadScene extends Phaser.Scene {
         this.load.image('sky', 'assets/sky.png');
         this.load.image('ground', 'assets/platform.png');
         this.load.image('player', 'assets/player.png');
+
+        // In preload() replace your image with:
+        this.load.spritesheet('player',
+            'assets/player-spritesheet.png',
+            { frameWidth: 32, frameHeight: 48 }
+        );
+
+// Then create animations in create()
+        this.anims.create({
+            key: 'left',
+            frames: this.anims.generateFrameNumbers('player', { start: 0, end: 3 }),
+            frameRate: 10,
+            repeat: -1
+        });
+// Add more animations for right, up, down, etc.
     }
 
     create() {

@@ -41,6 +41,12 @@ class GameScene extends Phaser.Scene {
         if (this.cursors.up.isDown && this.player.body.touching.down) {
             this.player.setVelocityY(-330);
         }
+        // In your update method or where player movement is handled
+        if (this.player.body.velocity.x < 0) {
+            this.player.setFlipX(true); // Face left
+        } else if (this.player.body.velocity.x > 0) {
+            this.player.setFlipX(false); // Face right
+        }
     }
 }
 
