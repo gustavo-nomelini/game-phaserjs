@@ -5,7 +5,22 @@
   "repository": "https://github.com/gustavo-nomelini/game-phaserjs.git",
   "author": "gustavo-nomelini <gustavolnomelini@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
   "dependencies": {
     "phaser": "^3.88.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.3",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
   }
 }
